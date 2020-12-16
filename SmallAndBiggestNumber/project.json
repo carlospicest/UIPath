@@ -1,6 +1,6 @@
 {
   "name": "SmallAndBiggestNumber",
-  "description": "Exercise that by using if and for each allows to know which is the biggest number and which is the smallest.",
+  "description": "[P1] Exercise that by using if and for each allows to know which is the biggest number and which is the smallest.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.3]",
