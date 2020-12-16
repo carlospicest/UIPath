@@ -135,7 +135,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Se almacena dependiendo de la letra del error un List respectivo." DisplayName="Switch" Expression="[tmpString(0)]" sap:VirtualizedContainerService.HintSize="493,205" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+            <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Se almacena dependiendo de la letra del error en su respectivo List." DisplayName="Switch" Expression="[tmpString(0)]" sap:VirtualizedContainerService.HintSize="493,205" sap2010:WorkflowViewState.IdRef="Switch`1_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
