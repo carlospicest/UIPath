@@ -998,8 +998,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "FilteringCompaniesBefore2005",
-      "projectName": "FilteringCompaniesBefore2005",
+      "projectUniqueName": "Excel DataTables Example",
+      "projectName": "Excel DataTables Example",
       "projectPath": "C:\\Users\\Carlos\\Documents\\UiPath\\Excel Example Workflow\\.local",
       "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Carlos\\Documents\\UiPath\\Excel Example Workflow\\.local"
