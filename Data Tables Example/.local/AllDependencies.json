@@ -1000,9 +1000,9 @@
     "restore": {
       "projectUniqueName": "Ejemplo DataTable",
       "projectName": "Ejemplo DataTable",
-      "projectPath": "C:\\Users\\Carlos\\Documents\\UiPath\\DataTablesExample\\.local",
+      "projectPath": "C:\\Users\\Carlos\\Documents\\UiPath\\Data Tables Example\\.local",
       "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos\\Documents\\UiPath\\DataTablesExample\\.local"
+      "outputPath": "C:\\Users\\Carlos\\Documents\\UiPath\\Data Tables Example\\.local"
     },
     "frameworks": {
       "net461": {
