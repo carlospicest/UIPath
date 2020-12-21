@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="783,2607" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="783,2697" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
       <x:String>System.Activities</x:String>
@@ -47,20 +47,20 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Primero tenemos que elegir mediante UI Explorer el elemento sobre el que queremos trabajar. En este caso, notepad." DisplayName="Prueba con NotePad" sap:VirtualizedContainerService.HintSize="570,2542" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Primero tenemos que elegir mediante UI Explorer el elemento sobre el que queremos trabajar. En este caso, notepad." DisplayName="Prueba con NotePad" sap:VirtualizedContainerService.HintSize="570,2632" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach NotePad" sap:VirtualizedContainerService.HintSize="528,2412" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="a9f4c308dd8584d4fdf14eb6378d8126" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Sin título: Bloc de notas' /&gt;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach NotePad" sap:VirtualizedContainerService.HintSize="528,2502" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="a9f4c308dd8584d4fdf14eb6378d8126" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Sin título: Bloc de notas' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="494,2266" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="494,2356" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -134,7 +134,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach NotePad &gt; Formato &gt; Fuente" sap:VirtualizedContainerService.HintSize="452,344" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="6aba0c235233efe4862fd3fc559c5d47" Selector="&lt;wnd app='notepad.exe' cls='#32768' idx='*' /&gt;">
+            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" sap2010:Annotation.AnnotationText="Cuando indiquemos el elemento Fuente del menú, tenemos que tener en cuenta que previamente tenemos que hacer click en Formato para poder abrir el desplegable. Para evitar que al hacer click no nos abra el menú, pulsamos la tecla 'F2' (detendrá durante 3 segundos la grabación) y mientras nosotros podemos hacer click en Formato, abrir el menú y capturarlo para poder operar con el posteriormente." DisplayName="Attach NotePad &gt; Formato &gt; Fuente" sap:VirtualizedContainerService.HintSize="452,434" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="6aba0c235233efe4862fd3fc559c5d47" Selector="&lt;wnd app='notepad.exe' cls='#32768' idx='*' /&gt;">
               <ui:WindowScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -171,6 +171,11 @@
                   </Sequence>
                 </ActivityAction>
               </ui:WindowScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:WindowScope>
             <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window Fuente" sap:VirtualizedContainerService.HintSize="452,1150" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="e3f6d24dc202d7e0dd6f0a5da061bbc3" Selector="&lt;wnd app='notepad.exe' cls='#32770' title='Fuente' /&gt;">
               <ui:WindowScope.Body>
