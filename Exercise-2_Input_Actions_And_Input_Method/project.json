@@ -1,6 +1,6 @@
 {
   "name": "Exercise-2_Input_Actions_And_Input_Method",
-  "description": "Ejercicio en el que se automatiza un proceso en el que se le solicita al usuario que introduzca un nombre de ciudad para posteriormente buscarlo en google y mostrar la información",
+  "description": "Ejercicio en el que se automatiza un proceso en el que se le solicita al usuario que introduzca un nombre de ciudad para posteriormente buscarlo en google y mostrar la información.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.3]",
