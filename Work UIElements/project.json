@@ -1,6 +1,6 @@
 {
   "name": "Work UIElements",
-  "description": "Ejercicio en el que se utilizan métodos que trabajan con los elementos de la UI. Por ejemplo, para buscar elementos específicos.\r\n\r\nLa prueba consiste en automatizar un proceso de inicio de sesión en una plataforma a través de unas credenciales y verificar si ha sido posible o no iniciar sesión.",
+  "description": "Ejercicio en el que se utilizan métodos que trabajan con los elementos de la UI. Por ejemplo, para buscar elementos (Find Elements) o comprobar si existen (IfExistsElement).\r\n\r\nLa prueba consiste en automatizar un proceso de inicio de sesión en una plataforma a través de unas credenciales (almacenadas en el gestor de credenciales de Windows) y verificar si ha sido posible o no iniciar sesión.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
