@@ -1,6 +1,6 @@
 {
   "name": "Exercise-2_Project_Organization",
-  "description": "Blank Process",
+  "description": "Ejercicio en el que se extrae un flujo de trabajo para reutilizarlo.\r\n\r\nEl flujo extraído se encarga de acceder a una web que genera información de personas, la procesa y devuelve sus datos personales.\r\n\r\nLuego, el flujo principal mediante un while, agrega a un datatable información de cinco personas para posteriormente guardarla en un fichero .xlsx",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.3]",
