@@ -1,0 +1,329 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1018,649" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="26">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="242,141" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <StateMachine InitialState="{x:Reference __ReferenceID1}" sap2010:Annotation.AnnotationText="Proceso de tienda que permite al usuario realizar la compra de bebidas. Se le permite al usuario la devolución del cambio del último producto adquirido.&#xD;&#xA;&#xD;&#xA;Si el usuario no dispone de suficiente saldo para realizar las compras, el proceso finalizará." DisplayName="State Machine" sap:VirtualizedContainerService.HintSize="653,850" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+          <x:Double x:Key="StateContainerWidth">619</x:Double>
+          <x:Double x:Key="StateContainerHeight">750.5</x:Double>
+          <av:PointCollection x:Key="ConnectorLocation">286,77.5 286,107.5 285.9,107.5 285.9,133.5</av:PointCollection>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="Se le muestra al usuario un desplegable para elegir el saldo inicial." DisplayName="Solicitar crédito inicial" sap:VirtualizedContainerService.HintSize="159,113" sap2010:WorkflowViewState.IdRef="State_1">
+        <State.Entry>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,793" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InputDialog OptionsString="{x:Null}" DisplayName="Elegir saldo inicial" sap:VirtualizedContainerService.HintSize="334,281" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Elige un saldo:" Options="[{&quot;5&quot;, &quot;10&quot;, &quot;20&quot;}]" Title="Escoger saldo">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[cantidadInicialCadena]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <Assign sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[saldo]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(cantidadInicialCadena)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InputDialog OptionsString="{x:Null}" DisplayName="Confirmar si el saldo escogido es o no el correcto" sap:VirtualizedContainerService.HintSize="334,281" sap2010:WorkflowViewState.IdRef="InputDialog_9" IsPassword="False" Label="[&quot;¿La cantidad de saldo: &quot; + saldo.ToString + &quot; escogida es la correcta?&quot;]" Options="[{&quot;Si&quot;, &quot;No, cambié de opinión y quiero cambiar.&quot;}]" Title="Confirmación de saldo">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[accionConfirmaSaldo]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+          </Sequence>
+        </State.Entry>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">190.5,133.5</av:Point>
+            <av:Size x:Key="ShapeSize">159,113</av:Size>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Double x:Key="StateContainerWidth">125</x:Double>
+            <x:Double x:Key="StateContainerHeight">26.446666666666658</x:Double>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <State.Transitions>
+          <Transition DisplayName="saldoConfirmado" sap:VirtualizedContainerService.HintSize="450,493" sap2010:WorkflowViewState.IdRef="Transition_19">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:PointCollection x:Key="ConnectorLocation">222.3,246.5 222.3,276.5 209,276.5 209,340.5</av:PointCollection>
+                <x:Int32 x:Key="SrcConnectionPointIndex">15</x:Int32>
+                <x:Int32 x:Key="DestConnectionPointIndex">22</x:Int32>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Transition.Condition>
+              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="accionConfirmaSaldo.Equals(&quot;Si&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_5" />
+            </Transition.Condition>
+            <Transition.To>
+              <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="Permitir al usuario elegir un producto de la lista." DisplayName="Elegir producto" sap:VirtualizedContainerService.HintSize="255,99" sap2010:WorkflowViewState.IdRef="State_3">
+                <State.Entry>
+                  <Sequence sap:VirtualizedContainerService.HintSize="839,1254" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Elegir bebida" sap:VirtualizedContainerService.HintSize="797,281" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Indica la bebida que quieres comprar:" Options="[{&quot;Coca Cola&quot;, &quot;Kas Limon&quot;, &quot;Kas Naranja&quot;}]" Title="Escoger bebida">
+                      <ui:InputDialog.Result>
+                        <OutArgument x:TypeArguments="x:String">[bebidaElegida]</OutArgument>
+                      </ui:InputDialog.Result>
+                    </ui:InputDialog>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="797,87" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[catalogo.Item(bebidaElegida)]" />
+                    <If Condition="[saldo &gt;= catalogo.Item(bebidaElegida)]" sap:VirtualizedContainerService.HintSize="797,714" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,571" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[saldo]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[saldo - catalogo.Item(bebidaElegida)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Tu saldo actual es de: &quot; + saldo.ToString]" />
+                          <ui:InputDialog OptionsString="{x:Null}" DisplayName="Confirmación para comprar otro artículo" sap:VirtualizedContainerService.HintSize="334,281" sap2010:WorkflowViewState.IdRef="InputDialog_10" IsPassword="False" Label="Escoger una acción:" Options="[{&quot;Comprar una nueva bebida&quot;, &quot;Devolución del cambio&quot;, &quot;Finalizar compra&quot;}]" Title="Confirmación de compra">
+                            <ui:InputDialog.Result>
+                              <OutArgument x:TypeArguments="x:String">[opcionCompra]</OutArgument>
+                            </ui:InputDialog.Result>
+                          </ui:InputDialog>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;No dispones de saldo suficiente para realizar la compra.&quot;]" />
+                          <Assign sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[opcionCompra]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">Finalizar compra</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </State.Entry>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">132.5,340.5</av:Point>
+                    <av:Size x:Key="ShapeSize">255,99</av:Size>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Double x:Key="StateContainerWidth">221</x:Double>
+                    <x:Double x:Key="StateContainerHeight">25</x:Double>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <State.Transitions>
+                  <Transition DisplayName="comprarOtroProducto" sap:VirtualizedContainerService.HintSize="450,493" sap2010:WorkflowViewState.IdRef="Transition_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:PointCollection x:Key="ConnectorLocation">298.25,439.5 298.25,499.889333333333 465,499.889333333333 465,394.95 387.5,394.95</av:PointCollection>
+                        <x:Int32 x:Key="SrcConnectionPointIndex">51</x:Int32>
+                        <x:Int32 x:Key="DestConnectionPointIndex">40</x:Int32>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Transition.To>
+                      <x:Reference>__ReferenceID0</x:Reference>
+                    </Transition.To>
+                    <Transition.Condition>
+                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="opcionCompra.Equals(&quot;Comprar una nueva bebida&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_7" />
+                    </Transition.Condition>
+                  </Transition>
+                  <Transition DisplayName="finalizarCompra" sap:VirtualizedContainerService.HintSize="450,493" sap2010:WorkflowViewState.IdRef="Transition_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:PointCollection x:Key="ConnectorLocation">209,439.5 209,469.5 190,469.5 190,689.5</av:PointCollection>
+                        <x:Int32 x:Key="SrcConnectionPointIndex">23</x:Int32>
+                        <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Transition.Condition>
+                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="opcionCompra.Equals(&quot;Finalizar compra&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_8" />
+                    </Transition.Condition>
+                    <Transition.To>
+                      <State x:Name="__ReferenceID2" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_2" IsFinal="True">
+                        <State.Entry>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box - Salida del Proceso" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Gracias por comprar en la tienda. Hasta pronto!!!&quot;]" />
+                        </State.Entry>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">123,689.5</av:Point>
+                            <av:Size x:Key="ShapeSize">134,61</av:Size>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </State>
+                    </Transition.To>
+                  </Transition>
+                  <Transition DisplayName="devolucionCambio" sap:VirtualizedContainerService.HintSize="450,493" sap2010:WorkflowViewState.IdRef="Transition_22">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:PointCollection x:Key="ConnectorLocation">247.25,439.5 247.25,543.889333333333 441.6,543.889333333333 441.6,607</av:PointCollection>
+                        <x:Int32 x:Key="SrcConnectionPointIndex">35</x:Int32>
+                        <x:Int32 x:Key="DestConnectionPointIndex">34</x:Int32>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Transition.Condition>
+                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="opcionCompra.Equals(&quot;Devolución del cambio&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_9" />
+                    </Transition.Condition>
+                    <Transition.To>
+                      <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Devolverle al usuario el valor del último producto que ha adquirido." DisplayName="Devolucion cambio" sap:VirtualizedContainerService.HintSize="168,117" sap2010:WorkflowViewState.IdRef="State_11">
+                        <State.Entry>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,59" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[saldo]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[saldo + catalogo.Item(bebidaElegida)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </State.Entry>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">366,607</av:Point>
+                            <av:Size x:Key="ShapeSize">168,117</av:Size>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Double x:Key="StateContainerWidth">134</x:Double>
+                            <x:Double x:Key="StateContainerHeight">29.778666666666709</x:Double>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <State.Transitions>
+                          <Transition DisplayName="escogerProducto" sap2010:WorkflowViewState.IdRef="Transition_23">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:PointCollection x:Key="ConnectorLocation">534,665.5 564,665.5 564,365.25 387.5,365.25</av:PointCollection>
+                                <x:Int32 x:Key="SrcConnectionPointIndex">36</x:Int32>
+                                <x:Int32 x:Key="DestConnectionPointIndex">16</x:Int32>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Transition.To>
+                              <x:Reference>__ReferenceID0</x:Reference>
+                            </Transition.To>
+                          </Transition>
+                        </State.Transitions>
+                      </State>
+                    </Transition.To>
+                  </Transition>
+                </State.Transitions>
+              </State>
+            </Transition.To>
+          </Transition>
+          <Transition DisplayName="saldoNoConfirmado" sap2010:WorkflowViewState.IdRef="Transition_20">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:PointCollection x:Key="ConnectorLocation">293.85,246.5 293.85,274.723333333333 451,274.723333333333 451,190 349.5,190</av:PointCollection>
+                <x:Int32 x:Key="SrcConnectionPointIndex">51</x:Int32>
+                <x:Int32 x:Key="DestConnectionPointIndex">36</x:Int32>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Transition.To>
+              <x:Reference>__ReferenceID1</x:Reference>
+            </Transition.To>
+            <Transition.Condition>
+              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="accionConfirmaSaldo.Equals(&quot;No, cambié de opinión y quiero cambiar.&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_6" />
+            </Transition.Condition>
+          </Transition>
+        </State.Transitions>
+        <State.Variables>
+          <Variable x:TypeArguments="x:String" Name="cantidadInicialCadena" />
+        </State.Variables>
+      </State>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <StateMachine.Variables>
+        <Variable x:TypeArguments="x:Int32" Name="saldo" />
+        <Variable x:TypeArguments="x:String" Name="accionConfirmaSaldo" />
+        <Variable x:TypeArguments="x:String" Name="opcionCompra" />
+        <Variable x:TypeArguments="x:String" Name="bebidaElegida" />
+        <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="catalogo">
+          <Variable.Default>
+            <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Int32)" ExpressionText="New Dictionary(Of String, Int32) From {{&quot;Coca Cola&quot;, 2}, {&quot;Kas Limon&quot;, 3}, {&quot;Kas Naranja&quot;, 2}}" />
+          </Variable.Default>
+        </Variable>
+      </StateMachine.Variables>
+    </StateMachine>
+  </Sequence>
+</Activity>
