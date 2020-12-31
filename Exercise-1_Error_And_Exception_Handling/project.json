@@ -1,0 +1,54 @@
+{
+  "name": "Exercise-1_Error_And_Exception_Handling",
+  "description": "Ejercicio que lee un fichero .xlsx y verifica si los datos que contiene la fila de Cash In y Cash Out son correctos (al convertirlos de String a Int32). Si la conversión es correcta, se calcula la diferencia entre Cash In, Cash Out y se marca en status como Success.\r\n\r\nSi por el contrario, alguno de los datos de Cash In o Cash Out no puede convertirse, se mostrará cuál de los dos o ámbos no ha podido ser procesado por ser erróneo.\r\n\r\nPor último, se almacenan los cálculos en un fichero .xlsx",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.9.3]",
+    "UiPath.Mail.Activities": "[1.9.3]",
+    "UiPath.System.Activities": "[20.10.1]",
+    "UiPath.UIAutomation.Activities": "[20.10.6]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.2.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "0be583d3-900f-488b-a6c6-4227786cb926",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}
